@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortable (Drag And Drop)</title>
+
+    <link rel="stylesheet" href="./bootstrap 4.6/bootstrap.min.css">
+    <link rel="stylesheet" href="./iconos/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="mb-2">Mis Tareas</h2>
+                <div style="min-height: 300px;" class="list-group" id="tareas">
+                    <div data-id="1" class="list-group-item">
+                        <h5> <span style="position: absolute; top:25px; right: 5px;" class="icon-menu2"></span> Dominar Drag and Drop</h5>
+                        <p class="mb-0" >Debo estudiar Drag And Drop para implementarlo en mi proyecto Woble</p>
+                    </div>
+                    <div data-id="2" class="list-group-item">
+                        <h5> <span style="position: absolute; top:25px; right: 5px;" class="icon-menu2"></span> Estudiar File Upload</h5>
+                        <p class="mb-0" >Debo estudiar File Upload para subir varios archivos a mi base de datos</p>
+                    </div>
+                    <div data-id="3" class="list-group-item">
+                        <h5> <span style="position: absolute; top:25px; right: 5px;" class="icon-menu2"></span> Debo Optimizar mi codigo de rutas</h5>
+                        <p class="mb-0" >Debo Verificar y Optimizar el codigo que use en mi archivo de Routes.js para mejorar el funcionamiento de mi servidor en Woble.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-2">Mis Tareas Completadas</h2>
+                <div style="min-height: 300px;" class="list-group" id="tareasCompletadas">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/Sortable.min.js" ></script>
+    <script src="./js/options.js"></script>
+</body>
+</html>
